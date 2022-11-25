@@ -23,3 +23,18 @@ Route::get('/paciente', 'App\Http\Controllers\Paciente@todosPacientes');
 Route::get('/paciente/{id}', 'App\Http\Controllers\Paciente@pegarPaciente');
 Route::delete('/paciente/deletar/{id}', 'App\Http\Controllers\Paciente@deletarPaciente');
 Route::put('/paciente/atualizar/{id}', 'App\Http\Controllers\Paciente@atualizarPaciente');
+
+// Path: app/Http/Controllers/Profissional.php
+Route::post('/profissional/cadastrar', 'App\Http\Controllers\Profissional@cadastrar');
+Route::get('/profissional', 'App\Http\Controllers\Profissional@todosProfissionais');
+Route::get('/profissional/{id}', 'App\Http\Controllers\Profissional@pegarProfissional');
+Route::delete('/profissional/deletar/{id}', 'App\Http\Controllers\Profissional@deletarProfissional');
+Route::put('/profissional/atualizar/{id}', 'App\Http\Controllers\Profissional@atualizarProfissional');
+
+// Path: app/Http/Controllers/Usuario.php
+Route::post('/usuario/cadastrar', 'App\Http\Controllers\Usuario@cadastrar');
+Route::get('/usuario', 'App\Http\Controllers\Usuario@todosUsuarios');
+Route::get('/usuario/{id}', 'App\Http\Controllers\Usuario@pegarUsuario');
+Route::delete('/usuario/deletar/{id}', 'App\Http\Controllers\Usuario@deletarUsuario');
+Route::put('/usuario/atualizar/{id}', 'App\Http\Controllers\Usuario@atualizarUsuario');
+
