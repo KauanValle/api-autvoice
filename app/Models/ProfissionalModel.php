@@ -21,7 +21,6 @@ class ProfissionalModel extends Model
         const SENHA ='senha';
 
         protected $fillable = [
-            self::ID_ENDERECO,
             self::CRM,
             self::NOME,
             self::DATA_NASCIMENTO,

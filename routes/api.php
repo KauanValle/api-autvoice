@@ -24,7 +24,7 @@ Route::get('/paciente/{id}', 'App\Http\Controllers\Paciente@pegarPaciente');
 Route::delete('/paciente/deletar/{id}', 'App\Http\Controllers\Paciente@deletarPaciente');
 Route::put('/paciente/atualizar/{id}', 'App\Http\Controllers\Paciente@atualizarPaciente');
 
-// Path: app/Http/Controllers/Profissional.php
+// Path: app/Http/Controllers/ProfissionalModel.php
 Route::post('/profissional/cadastrar', 'App\Http\Controllers\Profissional@cadastrar');
 Route::get('/profissional', 'App\Http\Controllers\Profissional@todosProfissionais');
 Route::get('/profissional/{id}', 'App\Http\Controllers\Profissional@pegarProfissional');

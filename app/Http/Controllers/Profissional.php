@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ProfissionalModel;
 use Illuminate\Http\Request;
 
 class Profissional extends Controller
@@ -43,7 +44,7 @@ class Profissional extends Controller
 
     public function atualizarProfissional(Request $request, $id)
     {
-        $profissional = Profissional ::find($id);
+        $profissional = Profissional::find($id);
         $profissional->nome = $request->nome;
         $profissional->email = $request->email;
         $profissional->senha = $request->senha;
